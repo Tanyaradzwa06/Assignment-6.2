@@ -1,0 +1,233 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f9;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+/* Card Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Common Card Styling */
+.card {
+    width: 300px;
+    max-width: 100%;
+    min-height: 360px;
+    padding: 25px;
+    border: 2px solid;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+.card li {
+    padding: 6px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Basic Card */
+.basic-card {
+    background-color: #e0f2fe;
+    border-color: #0284c7;
+}
+
+.basic-card h2 {
+    color: #0369a1;
+}
+
+/* Standard Card */
+.standard-card {
+    background-color: #dcfce7;
+    border-color: #16a34a;
+}
+
+.standard-card h2 {
+    color: #15803d;
+}
+
+/* Premium Card */
+.premium-card {
+    background-color: #f3e8ff;
+    border-color: #9333ea;
+}
+
+.premium-card h2 {
+    color: #7e22ce;
+}
+
+/* Price Styling */
+.price {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.price span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.basic-btn {
+    background-color: #0284c7;
+}
+
+.standard-btn {
+    background-color: #16a34a;
+}
+
+.premium-btn {
+    background-color: #9333ea;
+}
+
+/* Display Demonstration Section */
+.display-demo {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    border: 2px solid #d1d5db;
+    border-radius: 12px;
+}
+
+.display-demo > h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #172554;
+}
+
+.demo-box {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: #f8fafc;
+}
+
+.demo-box h3 {
+    margin-bottom: 10px;
+    color: #334155;
+}
+
+/* 1. Display: Block */
+.block-example {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #dbeafe;
+    border: 2px solid #2563eb;
+    border-radius: 5px;
+}
+
+/* 2. Display: Inline */
+.inline-example {
+    display: inline;
+    background-color: #fef3c7;
+    border: 1px solid #d97706;
+    color: #92400e;
+    padding: 4px;
+}
+
+/* 3. Display: Inline-Block */
+.inline-block-example {
+    display: inline-block;
+    width: 110px;
+    height: 65px;
+    margin: 8px 5px 0 0;
+    padding: 18px 5px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #f3e8ff;
+    border: 2px solid #9333ea;
+    border-radius: 6px;
+}
+
+/* Footer */
+.footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .display-demo {
+        padding: 15px;
+    }
+}
